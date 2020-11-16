@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 
 public class mainfragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

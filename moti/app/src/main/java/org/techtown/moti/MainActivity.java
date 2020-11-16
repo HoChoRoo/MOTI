@@ -56,12 +56,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        button4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                onFragmentchaged(4);
-//            }
-//        });
     }
 
     public void onFragmentchaged(int idx){
@@ -71,14 +65,10 @@ public class MainActivity extends AppCompatActivity {
         else if(idx == 2){
             getSupportFragmentManager().beginTransaction().replace(R.id.container,schoolfragment).commit();
         }
-
         else if(idx == 3){
             getSupportFragmentManager().beginTransaction().replace(R.id.container,localfragment).commit();
         }
 
-//        else if(idx == 2){
-//            getSupportFragmentManager().beginTransaction().replace(R.id.container,mainFragment).commit();
-//        }
     }
 
 }

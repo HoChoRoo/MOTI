@@ -3,81 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     android:orientation="vertical"
     tools:context=".mainfragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="학교 이름"
-        android:textSize="25dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="126dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/SchoolMeal"
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="오늘의 급식" />
+            android:text="  <   "
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="학교 이름"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="126dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="10dp"
 
-        <TextView
-            android:id="@+id/PopularPosts"
-            android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="인기 글" />
-    </LinearLayout>
+            android:layout_weight="4"
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="118dp"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/SchoolMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:text="오늘의 급식" />
 
-        <TextView
-            android:id="@+id/RecentPosts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="최근 게시물" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/GoSchoolMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="more" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="131dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_weight="4"
+            android:orientation="vertical"></LinearLayout>
 
-        <TextView
-            android:id="@+id/Posts1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="게시판1" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="107dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/Posts2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="게시판2" />
     </LinearLayout>
 
 </LinearLayout>
