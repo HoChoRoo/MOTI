@@ -11,11 +11,6 @@ public class MainActivity extends AppCompatActivity {
     localfragment localfragment;
     schoolfragment schoolfragment;
 
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
-
 
 
     @Override
@@ -26,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        mainfragment = (mainfragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
+        mainfragment = new mainfragment();
         localfragment = new localfragment();
         schoolfragment = new schoolfragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, mainfragment).commit();
+        Button button1;
+        Button button2;
+        Button button3;
+        Button button4;
 
         button1 = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
